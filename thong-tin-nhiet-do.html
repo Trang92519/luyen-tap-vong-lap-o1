@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="ip">
+<button onclick="getTempera">click me</button>
+<p id="temp"></p>
+<script>
+    function getTempera() {
+        let a = +document.getElementById('ip').value;
+        while (true) {
+            if (a > 100) {
+                document.getElementById('temp').innerHTML = "Giam nhiet do";
+                break;
+            } else if (a < 20) {
+                document.getElementById('temp').innerHTML = "Tang nhiet do";
+                break;
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
